@@ -1,1 +1,47 @@
+command /gm1:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "gamemode 1 %player%"
+        send "&f[&cSKAdvance&f] &aTon mode de jeu est passé en &bCréatif" to player
 
+command /gm0:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "gamemode 0 %player%"
+        send "&f[&cSKAdvance&f] &aTon mode de jeu est passé en &bSurvie" to player
+
+command /gm3:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "gamemode 3 %player%"
+        send "&f[&cSKAdvance&f] &aTon mode de jeu est passé en &bSpectateur" to player
+    
+command /gmc:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "gamemode 1 %player%"
+        send "&f[&cSKAdvance&f] &aTon mode de jeu est passé en &bCréatif" to player
+    
+command /gms:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "gamemode 0 %player%"
+        send "&f[&cSKAdvance&f] &aTon mode de jeu est passé en &bSurvie" to player
+command /gmsp:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "gamemode 3 %player%"
+        send "&f[&cSKAdvance&f] &aTon mode de jeu est passé en &bSpectateur" to player
+
+command /feed:
+    permission: skadvance.moderation
+    permission message: Tu n'as pas la permission
+    trigger:
+        execute console command "effect %player% saturation 999 3 true"
+        execute console command "effect %player% regeneration 999 3 true"
